@@ -3,7 +3,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import Ionicons from 'react-native-vector-icons/Ionicons'; // Ensure correct import
 import SplashScreen from './src/screens/SplashScreen';
 import HomeScreen from './src/screens/HomeScreen';
 import SearchScreen from './src/screens/SearchScreen';
@@ -29,7 +29,7 @@ const SearchStack = () => (
 const MainTabNavigator = () => (
   <Tab.Navigator
     screenOptions={({ route }) => ({
-      headerShown: false,  // Hide the header for tab screens
+      headerShown: false,
       tabBarIcon: ({ color, size }) => {
         let iconName;
         if (route.name === 'Home') {
